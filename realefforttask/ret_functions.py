@@ -30,12 +30,11 @@ def get_random_list(max_len):
 # Shared properties for the tasks collected under the TaskGenerator Class
 class TaskGenerator:
     path_to_render = None
-
     def __init__(self, **kwargs):
         self.body = self.get_body(**kwargs)
         self.correct_answer = self.get_correct_answer()
         self.html_body = self.get_html_body()
-        logger.info(f'Correct answer: {self.correct_answer}')
+        # logger.info(f'Correct answer: {self.correct_answer}')
 
     def get_context_for_body(self):
         return {}
