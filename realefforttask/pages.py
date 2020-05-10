@@ -81,7 +81,6 @@ class MyWaitPage(WaitPage):
 class WaitForResults(WaitPage):
     after_all_players_arrive = 'set_ranking'
 
-
 class Payoffs(Page):
     def is_displayed(self):
         return self.subsession.round_number == Constants.num_rounds
@@ -96,7 +95,6 @@ class Payoffs(Page):
             # 'total_payoff': total_payoff,
         }
 
-
 class EndQuestionnaire(Page):
     def is_displayed(self):
         return self.subsession.round_number == Constants.num_rounds
@@ -106,7 +104,6 @@ class EndQuestionnaire(Page):
         'end_question_4', 'end_question_5', 'end_question_6',
         'end_question_7', 'end_question_8'
         ]
-
 
 page_sequence = [
     Introduction,
